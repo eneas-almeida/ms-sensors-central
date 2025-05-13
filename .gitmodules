@@ -1,0 +1,9 @@
+[submodule "microservices/device-manager"]
+	path = microservices/device-manager
+	url = https://github.com/eneas-almeida/ms-sensors-device-manager.git
+[submodule "microservices/temperature-monitoring"]
+	path = microservices/temperature-monitoring
+	url = https://github.com/eneas-almeida/ms-sensors-temperature-monitoring.git
+[submodule "microservices/temperature-processing"]
+	path = microservices/temperature-processing
+	url = https://github.com/eneas-almeida/ms-sensors-temperature-processing.git
