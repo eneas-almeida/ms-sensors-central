@@ -44,8 +44,37 @@ idea {
 dependencies {
     # Manipulação de strings, números, objetos ou arrays, essa biblioteca pode economizar bastante tempo e reduzir bugs.
 	implementation 'org.apache.commons:commons-lang3:3.17.0'
+    implementation 'io.hypersistence:hypersistence-tsid:2.1.4'
 }
 ```
+
+### Configurações das properties
+
+```bash
+spring.application.name=device-manager
+
+server.port=8080
+
+spring.datasource.url=jdbc:h2:file:~/device-management-db;CASE_INSENSITIVE_IDENTIFIERS=TRUE;
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=123
+
+# Permite acesso remoto
+spring.h2.console.enabled=true
+spring.h2.console.settings.web-allow-others=true
+
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+# Alterar para create-drop em caso de mudança do schema
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+```
+
+### Para acessar o banco h2
+
+**Acessa a url:** http://localhost:8080/h2-console<br />
+**JDBC URL:** jdbc:h2:file:~/device-management-db
 
 ### Configurações da VM no Intellij
 
