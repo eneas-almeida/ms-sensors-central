@@ -1,22 +1,41 @@
 # Sensores de monitoramento
 
+> Este guia foi elaborado por **Enéas Almeida** com o principal objetivo de facilitar os repasses de informações à equipe.
+
 ## Info
 
-O projeto consiste no gerenciamento e monitoramento de sensores, permitindo a coleta, análise e acompanhamento de dados em tempo real.
+Sensores de monitoramento utilizando comunicação assíncrona com RabbitMq e Java.
+
+**Recursos:** Java | Microservice | SpringBoot | Gradle | RabbitMQ | Retry Pattern | Dead Queue | Docker | MongoDB.
+
+## Modelagem inicial (Monólito)
+
+<img src="./media/images/monolito.png" alt="Monolito" />
+
+## Modelagem final (Microserviços)
+
+<img src="./media/images/microservicos.png" alt="Microserviços" />
+
+### ⚓ Links dos microserviços
+
+👉 [Gerenciador de dispositivos](https://github.com/eneas-almeida/ms-sensors-device-manager)<br />
+👉 [Monitoramento de temperaturas](https://github.com/eneas-almeida/ms-sensors-temperature-monitoring)<br />
+👉 [Processamento de temperaturas](https://github.com/eneas-almeida/ms-sensors-temperatura-processing)<br />
+
+## Etapas de desenvolvimento
+
+1. Entendimento do problema a ser resolvido;
+2. Levantamento dos requisitos funcionais;
+3. Definição do padrão arquitetural utilizado;
+4. Definição das tecnologias utilizadas;
+5. Definição das atribuições e cronograma de estimativas no desenvolvimento das atividades;
+6. Desenvolvimento do código fonte.
+
+## Ajuda
 
 ## Modelo de repositórios
 
 A arquitetura adotada segue um modelo híbrido entre monorepo e multirepo: há um repositório principal responsável por coordenar e integrar os demais microserviços, que são mantidos em repositórios independentes. Essa abordagem busca equilibrar centralização e autonomia no desenvolvimento e manutenção dos serviços.
-
-## Modelagem inicial: monolito
-
-<img src="./media/images/monolito.png" alt="Monolito" />
-
-## Modelagem final: microserviços
-
-<img src="./media/images/microservicos.png" alt="Microserviços" />
-
-## Ajuda
 
 ### Criando submodulos
 
