@@ -112,4 +112,48 @@ spring.jpa.show-sql=true
 -   [Biblioteca do Gradle](https://mvnrepository.com/artifact/org.apache.commons/commons-lang3/3.17.0)
 -   [Initializr do SpringBoot](https://start.spring.io/)
 
+## RabbitMQ
+
+<img src="./media/images/rabbitmq.webp" width="300" />
+
+### Passo 0: subindo o container do RabbitMQ
+
+```bash
+docker-compose up -d
+```
+
+### Passo 1: acessa a dashboard
+
+<a href="http://localhost:15672">http://localhost:15672</a>
+
+<img src="./media/images/rabbit-painel-1.png" />
+
+### Passo 2: adiciona uma fila
+
+<img src="./media/images/rabbit-painel-2.png" />
+
+<img src="./media/images/rabbit-painel-3.png" />
+
+### Passo 3: verifica as exchanges defaults
+
+<img src="./media/images/rabbit-painel-4.png" />
+
+### Passo 4: volta na fila customers criada
+
+<img src="./media/images/rabbit-painel-5.png" />
+
+### Passo 5: realiza o binding de uma fila com uma exchange
+
+<img src="./media/images/rabbit-painel-6.png" />
+
+### Passo 6: envia uma mensagem
+
+<img src="./media/images/rabbit-painel-7.png" />
+
+### Passo 5: consome a fila
+
+<img src="./media/images/rabbit-painel-8.png" />
+
+<hr />
+
 © Documento elaborado por <a href="https://github.com/eneas-almeida">Enéas Almeida</a>.
