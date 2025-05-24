@@ -61,9 +61,10 @@ idea {
 # Adiciona a dependência abaixo
 
 dependencies {
-    # Manipulação de strings, números, objetos ou arrays, essa biblioteca pode economizar bastante tempo e reduzir bugs.
 	implementation 'org.apache.commons:commons-lang3:3.17.0'
     implementation 'io.hypersistence:hypersistence-tsid:2.1.4'
+    implementation 'com.fasterxml.uuid:java-uuid-generator:5.1.0'
+	implementation 'org.springframework.boot:spring-boot-starter-amqp'
 }
 ```
 
