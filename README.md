@@ -65,6 +65,7 @@ dependencies {
     implementation 'io.hypersistence:hypersistence-tsid:2.1.4'
     implementation 'com.fasterxml.uuid:java-uuid-generator:5.1.0'
 	implementation 'org.springframework.boot:spring-boot-starter-amqp'
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
 }
 ```
 

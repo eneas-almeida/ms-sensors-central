@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 
 services:
     rabbitmq:
@@ -16,7 +16,16 @@ services:
             - RABBITMQ_DEFAULT_PASS=admin
         networks:
             - sensors
-
+    mongodb:
+        container_name: sensors-mongodb
+        image: mongo:latest
+        restart: always
+        ports:
+            - 27017:27017
+        volumes:
+            - ./docker/mongodb/data:/data/db
+        networks:
+            - sensors
 networks:
     sensors:
         driver: bridge
