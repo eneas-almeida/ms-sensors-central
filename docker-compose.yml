@@ -5,7 +5,7 @@ services:
         image: 'rabbitmq:3.8-management-alpine'
         container_name: sensors-rabbitmq
         hostname: rabbitmq
-        restart: no
+        restart: always
         ports:
             - '15672:15672'
             - '5672:5672'
